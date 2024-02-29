@@ -1,5 +1,5 @@
 const express = require('express'); //Express - Um Framework que facilita a criação de servidores web
-const axios = require('axios'); 
+const axios = require('axios'); // Axios - Da Para usar o XMLHttpRequest | XMLHttpRequest - Envia requisições para um servidor web, e depois carrega os dados diretamente para o script
 const path = require ('path');
 const cors = require ('cors'); // Cors - Faz a ponte do Express para o CORS | CORS - Basicamente Informa que seu Site não é um puta de um virus | https://developer.mozilla.org/pt-BR/docs/Web/HTTP/CORS//
 const config = require('./config.json');
@@ -84,9 +84,9 @@ app.get('/climatempo/:cidade', async(req, res) => { // Define uma rota GET no Ex
     const city = req.params.cidade; // Armazena a Resposta do Usuario
 
     try{ // "Tentar", se não der certo, faz alguma outra coisa
-        const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}&units=metric`); //
-        if (response.status === 200) {
-            const clima = TraducaoClima[response.data.weather[0].description] || response.data.weather[0].description;
+        const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}&units=metric`); //Faz a Requisição para a Open Weather, usando a Api como "Chave" e usa a Cidade sendo costumizada
+        if (response.status === 200) { //Verifica se esta OK, o Codigo HTTP 200 diz que esta OK
+            const clima = TraducaoClima[response.data.weather[0].description] || response.data.weather[0].description; //Verifica se tem uma tradução, se tiver a usa, se não tiver usa a descrição padrão
 
             const weatherData = {
                 Temperatura: response.data.main.temp,
