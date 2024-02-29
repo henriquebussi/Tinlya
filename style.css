@@ -1,0 +1,119 @@
+body{
+    width: 100%;
+    background-image: url('./img/pexels-jaime-reimer-2662116.jpg');
+    background-position: center 20%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+#formClima{
+    width: 100%;
+    min-width: 280;
+    max-width: 1920px;
+    width: 50%;
+    margin-top: 10%;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: absolute;
+    margin-top: 23%;
+    margin-left: 24.3%;
+}
+
+#cityInput{
+    border-radius: 20px;
+    background-image: url('./img/WhatsApp_Image_2024-02-28_at_13.54.13-removebg-preview.png');
+    background-repeat: no-repeat;
+    background-size: 32px;
+    background-position: 98%;
+}
+
+#Tinlia{
+    font-family: "Roboto Slab", serif;
+    font-size: 2em;
+    text-align: flex-end;
+    color: white;
+}
+
+#climaResult{
+    position: relative;
+    position: absolute;
+    margin-left: 16.9%;
+    margin-top: 30%;
+    background-color: #8b9da25d;
+    border: 5px solid rgba(0, 0, 0, 0.436);
+    border-radius: 20px;
+    width: 65%;
+    height: 700%;
+}
+
+#horario{
+    font-family: 'Codec Pro', sans-serif;
+    font-size: 125px;
+    position: absolute;
+    top: 100%;
+    left: 39%;
+}
+
+#velocidadedoventoid{
+    font-family: 'Codec Pro', sans-serif;
+    font-size: 30px;
+    position: absolute;
+    left: 72.5%;
+    top: 37.5%;
+}
+
+#ventoicon{
+    position: absolute;
+    left: 83%;
+    top: 24%;
+}
+
+#umidadeicon{
+    position: absolute;
+    left: 48%;
+    top: 25%;
+}
+
+#umidadeid{
+    position: absolute;
+    font-family: 'Codec Pro', sans-serif;
+    font-size: 30px;
+    left: 43%;
+    top: 39%;
+}
+
+#temperaturaicon{
+    position: absolute;
+    top: 25%;
+    left: 20%;
+}
+
+#temperaturaid{
+    position: absolute;
+    font-family: 'Codec Pro', sans-serif;
+    font-size: 30px;
+    top: 39%;
+    left: 12%;
+}
+
+/* @media (max-width: 1356px) {
+
+    #formClima {
+        position: absolute;
+        margin-top: 25%;
+        margin-left: 20%;
+    }
+
+    #climaResult{
+        position: absolute;
+        margin-left: 65%;
+        margin-top: 3%;
+        background-color: #8b9da25d;
+        border: 2px solid black;
+        border-radius: 20px;
+        width: 450px;
+        h
+    }
+} */
