@@ -9,13 +9,18 @@
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
-    /> <!--Colocar o Bootstrap -->
+    />
+    <!--Colocar o Bootstrap -->
     <link rel="stylesheet" media="(max-width: 800px)" href="style.css" />
-    <link rel="stylesheet" href="style.css" /> <!-- CSS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-<!-- Fonte de Texto Roboto Slab -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fonte de Texto Roboto Slab -->
   </head>
 
   <body>
@@ -25,47 +30,69 @@
         Tinlia
       </h1>
     </div>
-    <div id="horario"></div>
-    <form id="formClima" class="input-group mb-3">
-      <input
-        type="text"
-        id="cityInput"
-        class="form-control"
-        placeholder="Cidade"
-        aria-label="Username"
-        aria-describedby="basic-addon1"
-      /> <!-- Barra de Pesquisa -->
-    </form>
+
+    <div class="conteudo">
+      <div id="horario"></div>
+      <form id="formClima" class="input-group mb-3">
+        <input
+          type="text"
+          id="cityInput"
+          class="form-control"
+          placeholder="Cidade"
+          aria-label="Username"
+          aria-describedby="basic-addon1"
+        />
+        <!-- Barra de Pesquisa -->
+      </form>
+
+      <div id="climades" class="climaResultado">
+        <p id="climaid"></p>
+        <div class="cidade">
+          <p id="city"></p>
+        </div>
+      </div>
+    </div>
 
     <div id="climaResult">
-      <div class="cidade">
-        <p id="city"></p>
-      </div>
+
       <div id="temperatura">
-        <p id="temperaturaid"></p>
-        <img id="temperaturaicon" src="./img/temperatura.png" alt="termometro.png" width="100px">
+        <p id="temperaturaid"><strong></strong></p>
+        <img
+          id="temperaturaicon"
+          src="./img/temperatura.png"
+          alt="termometro.png"
+          width="100px"
+        />
       </div>
       <div id="umidade">
         <p id="umidadeid"></p>
-        <img id="umidadeicon" src="./img/umidade.png" alt="umidade.png" width="100px">
+        <img
+          id="umidadeicon"
+          src="./img/umidade.png"
+          alt="umidade.png"
+          width="100px"
+        />
       </div>
       <div id="velocidadedovento">
         <p id="velocidadedoventoid"></p>
-        <img id="ventoicon" src="./img/vento.png" alt="vento.png" width="100px">
+        <img
+          id="ventoicon"
+          src="./img/vento.png"
+          alt="vento.png"
+          width="100px"
+        />
       </div>
-      <div id="climades">
-        <p id="climaid"></p>
-      </div>
-    </div> <!-- Bloco para Temperatura e etc... -->
+    </div>
+    <!-- Bloco para Temperatura e etc... -->
   </body>
 
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"
-  ></script> <!-- Fechar o Bootstrap -->
+  ></script>
+  <!-- Fechar o Bootstrap -->
 
-
-  <script src="script.js"></script> <!-- Colocar JS -->
-
+  <script src="script.js"></script>
+  <!-- Colocar JS -->
 </html>

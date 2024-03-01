@@ -46,6 +46,9 @@ body{
     border-radius: 20px;
     width: 65%;
     height: 700%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #horario{
@@ -59,44 +62,43 @@ body{
 #velocidadedoventoid{
     font-family: 'Codec Pro', sans-serif;
     font-size: 30px;
-    position: absolute;
-    left: 72.5%;
-    top: 37.5%;
+    position: relative;
 }
 
 #ventoicon{
-    position: absolute;
-    left: 83%;
-    top: 24%;
+
 }
 
-#umidadeicon{
-    position: absolute;
-    left: 48%;
-    top: 25%;
+#umidade, #temperatura, #velocidadedovento{
+    text-align: center;
 }
 
 #umidadeid{
-    position: absolute;
+    position: relative;
     font-family: 'Codec Pro', sans-serif;
     font-size: 30px;
-    left: 43%;
-    top: 39%;
+    color: #2196F3;
 }
 
 #temperaturaicon{
-    position: absolute;
-    top: 25%;
-    left: 20%;
+    
 }
 
 #temperaturaid{
-    position: absolute;
+    position: relative;
     font-family: 'Codec Pro', sans-serif;
     font-size: 30px;
-    top: 39%;
-    left: 12%;
+    color: #FB4A59;
+
 }
+
+#climaid{
+    position: absolute;
+    color: white;
+    font-size: 5rem;
+}
+
+
 
 /* @media (max-width: 1356px) {
 
